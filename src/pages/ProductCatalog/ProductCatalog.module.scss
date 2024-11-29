@@ -1,0 +1,105 @@
+.catalog-container {
+  padding: 2rem;
+
+  .search-bar,
+  .filter-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    input,
+    select {
+      padding: 0.5rem;
+      margin-right: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: box-shadow 0.2s ease;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+        border: 1px solid rgba(81, 203, 238, 1);
+      }
+    }
+
+    input {
+      width: 200px;
+      font-size: 1rem;
+    }
+
+    select {
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+
+    .product-card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        max-width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+        border-bottom: 1px solid #eaeaea;
+        padding-bottom: 1rem;
+      }
+
+      .product-info {
+        text-align: center;
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: bold;
+          margin: 1rem 0 0.5rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          color: #777;
+          margin-bottom: 1rem;
+        }
+
+        .price {
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .no-products {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+  }
+}

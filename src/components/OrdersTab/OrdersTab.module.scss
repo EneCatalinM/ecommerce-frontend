@@ -1,0 +1,82 @@
+.orders-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    ul {
+      list-style: none;
+      padding: 0;
+  
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #fff;
+        transition: transform 0.3s, box-shadow 0.3s;
+  
+        &:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+  
+        .order-details {
+          display: flex;
+          flex-direction: column;
+  
+          p {
+            margin: 0;
+            margin-bottom: 5px;
+  
+            &:last-child {
+              margin-bottom: 0;
+            }
+  
+            span {
+              font-weight: bold;
+              color: #007bff;
+            }
+  
+            &.status {
+              font-weight: bold;
+              color: #ff9800;
+            }
+          }
+        }
+      }
+    }
+  
+    .actions {
+      button {
+        padding: 10px 15px;
+        background-color: #e74c3c;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s ease;
+  
+        &:hover {
+          background-color: #c0392b;
+          box-shadow: 0 4px 8px rgba(231, 76, 60, 0.4);
+        }
+  
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+  

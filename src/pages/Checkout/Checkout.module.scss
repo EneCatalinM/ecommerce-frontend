@@ -1,0 +1,134 @@
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 30px;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  .checkout-form {
+    flex: 1;
+    max-width: 450px;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    .form-group {
+      margin-bottom: 20px;
+  
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #555;
+      }
+  
+      input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        transition: border-color 0.3s;
+  
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+        }
+      }
+    }
+  
+    .checkout-button {
+      padding: 15px 25px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+  
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .order-success {
+      margin-top: 20px;
+      color: #28a745;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  
+  .checkout-cart {
+    flex: 1.5;
+    padding: 30px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+  
+    h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+  
+    ul {
+      list-style-type: none;
+      padding: 0;
+  
+      .cart-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        background-color: #ffffff;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          margin-right: 20px;
+          border-radius: 8px;
+        }
+  
+        .cart-info {
+          h3 {
+            margin: 0 0 10px;
+            font-weight: bold;
+            color: #333;
+          }
+  
+          p {
+            margin: 0;
+            color: #777;
+          }
+        }
+      }
+    }
+  
+    .total-price {
+      margin-top: 30px;
+      text-align: right;
+      padding: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+  
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+  
