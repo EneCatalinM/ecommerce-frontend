@@ -20,7 +20,6 @@ const ProductCatalog: React.FC = () => {
   const [filterPrice, setFilterPrice] = useState<'low' | 'high' | ''>('');
   const navigate = useNavigate();
 
-  // Debounce pentru căutarea produselor
   const debouncedFetchProducts = useCallback(
     debounce(async (query: string) => {
       try {
